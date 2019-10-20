@@ -1,0 +1,67 @@
+{
+  "name": "ehm-ip-changer",
+  "version": "0.1.0",
+  "private": true,
+  "main": "start-electron.js",
+  "build": {
+    "appId": "io.mattjennings.ehm-ip-changer",
+    "extends": null,
+    "productName": "EHM IP Changer",
+    "win": {
+      "target": [
+        "portable"
+      ]
+    },
+    "portable": {
+      "artifactName": "EHM IP Changer.exe"
+    },
+    "directories": {
+      "buildResources": "resources",
+      "output": "release"
+    },
+    "files": [
+      "start-electron.js",
+      "build",
+      "node_modules"
+    ]
+  },
+  "dependencies": {
+    "electron-is-dev": "^1.1.0",
+    "electron-serve": "^0.4.0"
+  },
+  "scripts": {
+    "electron": "cross-env NODE_ENV=dev electron .",
+    "electron-build": "rm -rf release && electron-builder --win",
+    "start": "cross-env BROWSER=none npm run react-start",
+    "react-start": "react-scripts start",
+    "build": "react-scripts build",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@material-ui/core": "^4.5.1",
+    "@material-ui/icons": "^4.5.1",
+    "cross-env": "^6.0.3",
+    "electron": "^6.0.12",
+    "electron-builder": "^21.2.0",
+    "notistack": "^0.9.5",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-scripts": "3.2.0",
+    "styled-components": "^4.4.0"
+  }
+}
