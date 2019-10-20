@@ -8,7 +8,7 @@ Manage your EHM league IPs and easily switch between them
 
 ## How to use
 
-1. Add a league
+1. Add your leagues by clicking the + button
 2. Make sure you don't have the "Join Network Game" window open in EHM
 3. Select a league in the IP Manager
 4. Click on "Join Network Game" in EHM and the IP should be filled in for you
