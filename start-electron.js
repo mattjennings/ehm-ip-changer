@@ -9,13 +9,15 @@ let mainWindow
   await app.whenReady()
 
   mainWindow = new BrowserWindow({
-    width: 500,
-    height: 700,
+    width: 600,
+    height: 600,
     webPreferences: {
       nodeIntegration: true
     },
     titleBarStyle: 'hidden'
   })
+
+  mainWindow.removeMenu()
 
   if (!isDev) {
     await loadURL(mainWindow)
