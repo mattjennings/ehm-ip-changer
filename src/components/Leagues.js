@@ -98,8 +98,8 @@ export default function Leagues() {
       <Table>
         <StyledTableHead>
           <TableRow>
-            <StyledTableHeadCell>Current</StyledTableHeadCell>
-            <StyledTableHeadCell>League Name</StyledTableHeadCell>
+            <StyledTableHeadCell>Active</StyledTableHeadCell>
+            <StyledTableHeadCell>Name</StyledTableHeadCell>
             <StyledTableHeadCell>IP Address</StyledTableHeadCell>
             <StyledTableHeadCell align="right" />
           </TableRow>
