@@ -1,19 +1,19 @@
 {
-  "name": "ehm-ip-changer",
+  "name": "ehm-ip-manager",
   "version": "1.0.0",
   "private": true,
   "main": "start-electron.js",
   "build": {
-    "appId": "io.mattjennings.ehm-ip-changer",
+    "appId": "io.mattjennings.ehm-ip-manager",
     "extends": null,
-    "productName": "EHM IP Changer",
+    "productName": "EHM IP Manager",
     "win": {
       "target": [
         "portable"
       ]
     },
     "portable": {
-      "artifactName": "EHM IP Changer.exe"
+      "artifactName": "EHM IP Manager.exe"
     },
     "directories": {
       "buildResources": "resources",
@@ -21,8 +21,7 @@
     },
     "files": [
       "start-electron.js",
-      "build",
-      "node_modules"
+      "build"
     ]
   },
   "dependencies": {
