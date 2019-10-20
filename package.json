@@ -1,6 +1,6 @@
 {
   "name": "ehm-ip-manager",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "main": "start-electron.js",
   "build": {
